@@ -3,6 +3,11 @@ const server = http.createServer((req,res) => {
 
     if(req.url === '/'){
         res.writeHead(200, {'content-type' : 'text/plain'})
+        res.end("hello from node Umayer")
+    }
+    else if(req.url === '/about'){
+        res.writeHead(200, {'content-type' : 'text/plain'})
+        res.end("About US hello from Umayer")
     }
 
 })
